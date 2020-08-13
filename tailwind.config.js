@@ -15,7 +15,13 @@ module.exports = {
       'lg-introhead': '4.375rem',
       'xl-introhead': '5rem',
       'base-introdescription': '18px',
-      'md-introdescription': '20px'
+      'md-introdescription': '20px',
+      'sm-sectionindex': '18px',
+      'md-sectionindex': '20px',
+      'sm-sectionheadings': '24px',
+      'md-sectionheadings': '30px',
+      'sm-contentsize': '18px',
+      'md-contentsize': '20px'
     },
     extend: {
       lineHeight: {
