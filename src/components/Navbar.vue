@@ -5,10 +5,8 @@
                 <img src="../assets/profile-logo.svg" class="h-16 w-16"/>
             </div>
             <div class="navbar-right-section flex">
-                <button class="navbar-right-section-button flex self-center">
-                    <span class="navbar-right-section-button-text px-5 py-3">
-                        Resume
-                    </span>
+                <button class="navbar-right-section-button flex self-center px-5">
+                    Resume
                 </button>
             </div>
         </div>
@@ -28,13 +26,13 @@ export default {
     border-radius: 3px;
     border-style: solid;
     outline: none;
-}
-.navbar-right-section-button:hover {
-    transform: scale(1.05);
-}
-.navbar-right-section-button-text {
     font-family: 'San Francisco';
     color: #64ffda;
     font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-right-section-button:hover {
+    background: #172a45;
 }
 </style>

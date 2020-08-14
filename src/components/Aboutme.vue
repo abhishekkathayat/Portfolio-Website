@@ -1,7 +1,7 @@
 <template>
     <div class="aboutme-main flex justify-center">
         <div class="aboutme-main-heading w-10/12 md:w-9/12">
-            <div class="aboutme-main-heading-container w-full flex">
+            <div class="aboutme-main-heading-container w-full md:w-8/12 flex">
                 <div class="aboutme-main-heading-main-container w-full flex">
                     <h1 class="aboutme-main-heading-sub-container">
                         <span class="aboutme-main-heading-index text-sm-sectionindex md:text-md-sectionindex"> 01. </span>
@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="aboutme-main-content-container flex mt-5">
-                <div class="aboutme-main-content-text-container md:w-7/12">
+                <div class="aboutme-main-content-text-container md:w-7/12 lg:w-6/12">
                     <p class="aboutme-content-text text-sm-contentsize md:text-md-contentsize">
                         {{ detailaboutme.aboutme_a }}
                     </p>
@@ -63,18 +63,13 @@ export default {
 .aboutme-main-heading-main-container::after {
     background-color: #303c55;
     height: 1px;
-    width: 400px;
+    width: 100%;
     content: "";
     display: block;
     position: relative;
     margin-left: 20px;
     align-self: center;
     top: -5px;
-}
-@media only screen and (max-width: 450px) {
-  .aboutme-main-heading-main-container::after {
-    width: 100%;
-  }
 }
 .aboutme-content-text, .aboutme-content-tech-head {
     color: #8892B0;

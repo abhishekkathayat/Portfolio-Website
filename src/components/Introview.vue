@@ -13,10 +13,8 @@
       <p class="intro-view-main-head-workdescription mt-8 mb-16 sm:w-11/12 md:w-7/12 lg:w-7/12 xl:w-6/12 text-base-introdescription sm:text-md-introdescription md:text-md-introdescription lg:text-md-introdescription xl:text-md-introdescription flex">
         {{ introdata.myworkdescription }}
       </p>
-      <button class="intro-view-main-head-button flex outline-none">
-        <span class="intro-view-main-head-button-text py-5 px-8">
-          Get In Touch
-        </span>
+      <button class="intro-view-main-head-button flex outline-none py-5 px-8">
+        Get In Touch
       </button>
     </div>
   </div>
@@ -33,7 +31,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.intro-view-main-head-nameis, .intro-view-main-head-button-text {
+.intro-view-main-head-nameis {
   font-family: "San Francisco";
   color: #64ffda;
 }
@@ -53,11 +51,12 @@ export default {
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
+  font-family: "San Francisco";
+  color: #64ffda;
+  font-size: 14px;
+  outline: none;
 }
 .intro-view-main-head-button:hover {
-  transform: scale(1.02);
-}
-.intro-view-main-head-button-text {
-  font-size: 14px;
+  background: #172a45;
 }
 </style>
