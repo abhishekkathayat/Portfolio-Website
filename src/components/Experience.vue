@@ -36,11 +36,11 @@
                     </span>
                     <ul class="mt-3">
                         <li 
-                            class="experience-company-job-description mb-3 leading-tight"
+                            class="experience-company-job-description mb-3 leading-tight flex"
                             v-for="job_item in this.experience.job_description"
                             v-bind:key="job_item.id">
-                            <font-awesome-icon class="fa-xs" color="#64ffda" :icon="['fas', 'caret-right']"/>
-                            <span class="job-description-item"> {{ job_item }} </span>
+                            <font-awesome-icon class="fa-xs mt-1" color="#64ffda" :icon="['fas', 'caret-right']"/>
+                            <p class="job-description-item ml-3"> {{ job_item }} </p>
                         </li>
                     </ul>
                 </div>

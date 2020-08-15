@@ -12,12 +12,14 @@
                     class="projects-main-content-project-card mx-2 my-2"
                     v-for="(project, index) in detailprojects"
                     :key="index">
-                    <div class="project-card rounded shadow-lg px-6 py-8 h-full">
+                    <div class="project-card rounded shadow-lg px-8 py-10 h-full">
                         <div class="project-card-header flex justify-between bg-transparent">
-                            <img src="../assets/folder.svg" class="h-12 w-12 bg-transparent"/>
-                            <a :href="project.project_github_link" class="flex">
-                                <font-awesome-icon color="#a8b2d1" class="fa-lg bg-transparent self-center" :icon="['fab', 'github']"/>
-                            </a>
+                            <img src="../assets/folder.svg" class="h-10 w-10 bg-transparent"/>
+                            <span class="bg-transparent self-center mr-2">
+                                <a :href="project.project_github_link">
+                                    <font-awesome-icon class="project-link-icon fa-lg bg-transparent self-center" :icon="['fab', 'github']"/>
+                                </a>
+                            </span>
                         </div>
                         <div class="project-card-description mt-8 bg-transparent">
                             <span class="project-card-description-name bg-transparent leading-tight">
@@ -26,7 +28,7 @@
                             <p class="project-card-description-details mt-2 bg-transparent">
                                 {{ project.project_description }}
                             </p>
-                            <div class="project-card-description-technologies-container mt-3 mb-5 bg-transparent">
+                            <div class="project-card-description-technologies-container mt-5 mb-5 bg-transparent">
                                 <span
                                     class="project-card-description-technologies bg-transparent mr-2"
                                     v-for="(tech, ind) in project.project_technologies"
@@ -85,6 +87,12 @@ export default {
 .project-card:hover {
     transform: translateY(-5px);
     transition: 0.25s linear;
+}
+.project-link-icon {
+    color: #a8b2d1;
+}
+.project-link-icon:hover {
+    color: #64ffda;
 }
 .project-card-description-name {
     font-family: "Calibre";

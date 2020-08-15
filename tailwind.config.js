@@ -21,7 +21,12 @@ module.exports = {
       'sm-sectionheadings': '24px',
       'md-sectionheadings': '30px',
       'sm-contentsize': '18px',
-      'md-contentsize': '20px'
+      'md-contentsize': '20px',
+      'sm-getintouchindex': '14px',
+      'md-getintouchindex': '16px',
+      'sm-getintouchheader': '40px',
+      'md-getintouchheader': '50px',
+      'lg-getintouchheader': '60px'
     },
     extend: {
       lineHeight: {

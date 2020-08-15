@@ -13,7 +13,7 @@
       <p class="intro-view-main-head-workdescription mt-8 mb-16 sm:w-11/12 md:w-7/12 lg:w-7/12 xl:w-6/12 text-base-introdescription sm:text-md-introdescription md:text-md-introdescription lg:text-md-introdescription xl:text-md-introdescription flex">
         {{ introdata.myworkdescription }}
       </p>
-      <button class="intro-view-main-head-button flex outline-none py-5 px-8">
+      <button class="intro-view-main-head-button flex outline-none py-5 px-8" v-on:click="getintouch()">
         Get In Touch
       </button>
     </div>
@@ -25,6 +25,11 @@ export default {
   name: 'Introview',
   props: {
     introdata: Object
+  },
+  methods: {
+    getintouch() {
+      window.location = "mailto:abhishekkathayat25@gmail.com"
+    }
   }
 }
 </script>

@@ -2,18 +2,22 @@
   <div id="app">
     <Navbar/>
     <Introview class="mt-16" :introdata="introdata"/>
-    <AboutMe class="mt-32" :detailaboutme="detailaboutme"/>
-    <Experience class="mt-32" :detailexperience="detailexperience"/>
-    <Projects class="mt-32" :detailprojects="detailprojects"/>
+    <AboutMe class="mt-64" :detailaboutme="detailaboutme"/>
+    <Experience class="mt-64" :detailexperience="detailexperience"/>
+    <Projects class="mt-64" :detailprojects="detailprojects"/>
+    <GetInTouch class="mt-64" :detailgetintouch="detailgetintouch"/>
+    <Footer class="mt-64" :detailfooter="detailfooter"/>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
 import AboutMe from './components/Aboutme.vue'
 import Projects from './components/Projects.vue'
 import Introview from './components/Introview.vue'
 import Experience from './components/Experience.vue'
+import GetInTouch from './components/GetInTouch.vue'
 
 export default {
   name: 'App',
@@ -117,15 +121,25 @@ export default {
             'Java'
           ]
         }
+      },
+      detailgetintouch: {
+        description: 'Whether you have a question or just want to say hi, just drop a message. I\'ll try my best to get back to you!'
+      },
+      detailfooter: {
+        github_link: 'https://www.github.com/Abhishek-Kathayat',
+        linkedin_link: 'https://www.linkedin.com/in/abhishek-kathayat-197672130/',
+        medium_link: 'https://medium.com/@abhishekkathayat25',
       }
     }
   },
   components: {
     Navbar,
+    Footer,
     AboutMe,
     Projects,
     Introview,
-    Experience
+    Experience,
+    GetInTouch
   }
 }
 </script>
