@@ -1,8 +1,8 @@
 <p align="center">
   <img height="120" width="120" src="https://github.com/Abhishek-Kathayat/abhishek-kathayat.github.io/blob/master/readmecontent/readme-logo.png"/>
+  <h1 align="center"> Abhishek Kathayat </h1>
+  <h4 align="center"> <a href="https://www.abhishek-kathayat.github.io"> abhishek-kathayat.github.io </a> </h4>
 </p>
-<h1 align="center"> Abhishek Kathayat </h1>
-<span align="center"> <a href="https://www.abhishek-kathayat.github.io"> abhishek-kathayat.github.io </a> </span>
 <br/>
 <p align="center"> Personal Website built using <a href="https://vuejs.org">Vue</a> and <a href="https://tailwindcss.com">Tailwindcss</a> and hosted on <a href="https://pages.github.com/"> Github Pages</a>. </p>
 <p align="center"> Design taken from <a href="https://www.brittanychiang.com"> Brittany Chiang </p>
