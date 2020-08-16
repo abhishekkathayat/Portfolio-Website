@@ -2,7 +2,7 @@
     <div class="navbar-man flex justify-center my-6">
         <div class="navbar-section-holder w-11/12 flex justify-between">
             <div class="navbar-left-section flex">
-                <a href=""><img src="../assets/profile-logo.svg" class="h-16 w-16"/></a>
+                <a href="https://abhishek-kathayat.github.io"><img src="../assets/profile-logo.svg" class="h-16 w-16"/></a>
             </div>
             <div class="navbar-right-section flex">
                 <button class="navbar-right-section-button flex self-center px-5">

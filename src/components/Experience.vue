@@ -17,6 +17,8 @@
                         :key="index"
                         :id="`tab-${index}`"
                         v-on:click="selectExperience(item.company)"
+                        @click="activeTab = index"
+                        :class="{selectedTab: index === activeTab}"
                     >
                         {{ item.company }} 
                     </button>
@@ -57,16 +59,23 @@ export default {
     },
     data () {
         return {
-            experience: this.detailexperience[0]
+            experience: this.detailexperience[0],
+            activeTab: 0
         }
+    },
+    mounted () {
+        var preselecttab = document.getElementById('tab-0');
+        preselecttab.classList.add('selectedTab')
     },
     methods: {
         selectExperience: function(company) {
+            var removeselecttab = document.getElementById('tab-0');
+            removeselecttab.classList.remove('selectedTab');
             for(var key in this.detailexperience) {
                 if(this.detailexperience[key].company == company) {
                     this.experience = this.detailexperience[key]
                 }
-            }  
+            }
         }
     }
 }
@@ -107,6 +116,10 @@ export default {
     font-size: 13px;
     color: #8892B0;
     white-space: nowrap;
+}
+.selectedTab {
+    border-color: #64ffda;
+    color: #64ffda;
 }
 .experience-main-content-button:hover {
     background: #172a45;
