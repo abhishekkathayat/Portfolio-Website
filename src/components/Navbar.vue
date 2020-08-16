@@ -5,9 +5,9 @@
                 <a href="https://abhishek-kathayat.github.io"><img src="../assets/profile-logo.svg" class="h-16 w-16"/></a>
             </div>
             <div class="navbar-right-section flex">
-                <button class="navbar-right-section-button flex self-center px-5">
+                <a href="./resume.pdf" target="_blank" rel="noopener noreferrer" class="navbar-right-section-button flex self-center px-5">
                     Resume
-                </button>
+                </a>
             </div>
         </div>
     </div>
