@@ -14,5 +14,5 @@
   ![Tailwindcss](https://img.shields.io/github/package-json/dependency-version/Abhishek-Kathayat/abhishek-kathayat.github.io/tailwindcss)
 
 </div>
-<br/><br/>
+<br/>
 <img src="https://github.com/Abhishek-Kathayat/abhishek-kathayat.github.io/blob/master/readmecontent/website-snip.png"/>
