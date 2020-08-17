@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="120" width="120" src="https://github.com/Abhishek-Kathayat/abhishek-kathayat.github.io/blob/master/readmecontent/readme-logo.png"/>
+  <img height="120" width="120" src="https://github.com/Abhishek-Kathayat/abhishek-kathayat.github.io/blob/master/images/readme-logo.png"/>
 </p>
 <h1 align="center"> Abhishek Kathayat </h1>
 <h4 align="center"> <a href="https://www.abhishek-kathayat.github.io">abhishek-kathayat.github.io</a> </h4>
@@ -15,4 +15,4 @@
 
 </div>
 <br/>
-<img src="https://github.com/Abhishek-Kathayat/abhishek-kathayat.github.io/blob/master/readmecontent/website-snip.png"/>
+<img src="https://github.com/Abhishek-Kathayat/abhishek-kathayat.github.io/blob/master/images/website-snip.png"/>
