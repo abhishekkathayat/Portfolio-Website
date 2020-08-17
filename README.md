@@ -4,8 +4,8 @@
   <h4 align="center"> <a href="https://www.abhishek-kathayat.github.io"> abhishek-kathayat.github.io </a> </h4>
 </p>
 <br/>
-<p align="center"> Personal Website built using <a href="https://vuejs.org">Vue</a> and <a href="https://tailwindcss.com">Tailwindcss</a> and hosted on <a href="https://pages.github.com/"> Github Pages</a>. </p>
-<p align="center"> Design taken from <a href="https://www.brittanychiang.com"> Brittany Chiang </p>
+<h4 align="center"> Personal Website built using <a href="https://vuejs.org">Vue</a> and <a href="https://tailwindcss.com">Tailwindcss</a> and hosted on <a href="https://pages.github.com/"> Github Pages</a>. </h4>
+<h4 align="center"> Design taken from <a href="https://www.brittanychiang.com"> Brittany Chiang </h4>
 <div align="center">
   
   ![License](https://img.shields.io/github/license/Abhishek-Kathayat/abhishek-kathayat.github.io)
