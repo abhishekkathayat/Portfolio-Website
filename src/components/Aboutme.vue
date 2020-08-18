@@ -9,7 +9,7 @@
                     </h1>
                 </div>
             </div>
-            <div class="aboutme-main-content-container flex mt-5">
+            <div class="aboutme-main-content-container md:flex mt-5">
                 <div class="aboutme-main-content-text-container md:w-7/12 lg:w-6/12">
                     <p class="aboutme-content-text text-sm-contentsize md:text-md-contentsize">
                         {{ detailaboutme.aboutme_a }}
@@ -31,6 +31,11 @@
                                 <span class="aboutme-content-tech-name ml-1"> {{ item }} </span>
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <div class="aboutme-main-content-image-container mt-12 md:mt-0 md:ml-16 md:w-5/12 lg:w-6/12">
+                    <div class="aboutme-image-container flex justify-center">
+                        <img class="aboutme-image" src="../assets/abhishek.jpg">
                     </div>
                 </div>
             </div>
@@ -79,5 +84,23 @@ export default {
     font-family: 'San Francisco';
     font-size: 13px;
     color: #8892B0;
+}
+.aboutme-image {
+    width: 58%;
+}
+@media only screen and (max-width: 1125px) {
+    .aboutme-image {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .aboutme-image {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .aboutme-image {
+        width: 75%;
+    }
 }
 </style>
