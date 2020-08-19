@@ -35,7 +35,7 @@
                 </div>
                 <div class="aboutme-main-content-image-container mt-12 md:mt-0 md:ml-16 md:w-5/12 lg:w-6/12">
                     <div class="aboutme-image-container flex justify-center">
-                        <img class="aboutme-image" src="../assets/abhishek.jpg">
+                        <img class="aboutme-image shadow-lg" src="../assets/abhishek.jpg">
                     </div>
                 </div>
             </div>
@@ -87,6 +87,7 @@ export default {
 }
 .aboutme-image {
     width: 58%;
+    border-radius: 3px;
 }
 @media only screen and (max-width: 1125px) {
     .aboutme-image {
