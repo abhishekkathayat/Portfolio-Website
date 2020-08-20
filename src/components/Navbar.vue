@@ -5,22 +5,14 @@
                 <a href="https://abhishek-kathayat.github.io"><img src="../assets/profile-logo.svg" class="h-16 w-16"/></a>
             </div>
             <div class="navbar-right-section flex">
-                <ul class="navbar-right-links md:flex hidden">
-                    <li class="navbar-right-link-holder mx-4 self-center"> 
-                        <span class="navbar-right-link-index"> 01. </span> 
-                        <span class="navbar-right-link-text"> <a href=""> About </a> </span> 
-                    </li>
-                    <li class="navbar-right-link-holder mx-4 self-center"> 
-                        <span class="navbar-right-link-index"> 02. </span> 
-                        <span class="navbar-right-link-text"> <a href=""> Experience </a> </span> 
-                    </li>
-                    <li class="navbar-right-link-holder mx-4 self-center"> 
-                        <span class="navbar-right-link-index"> 03. </span> 
-                        <span class="navbar-right-link-text"> <a href=""> Work </a> </span> 
-                    </li>
-                    <li class="navbar-right-link-holder ml-4 mr-8 self-center"> 
-                        <span class="navbar-right-link-index"> 04. </span> 
-                        <span class="navbar-right-link-text"> <a href=""> Contact </a> </span> 
+                <ul class="navbar-right-links md:flex hidden md:mr-4">
+                    <li
+                    class="navbar-right-link-holder mx-4 self-center"
+                    v-for="(link, index) in navbarlinks"
+                    :key="index"
+                    v-on:click="$emit('section', link.name)"> 
+                        <span class="navbar-right-link-index"> {{link.index}} </span> 
+                        <span class="navbar-right-link-text"> {{link.name}} </span> 
                     </li>
                 </ul>
                 <a href="./resume.pdf" target="_blank" rel="noopener noreferrer" class="navbar-right-section-button flex self-center px-5">
@@ -33,7 +25,10 @@
 
 <script>
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    props: {
+        navbarlinks: Object
+    }
 }
 </script>
 
@@ -50,6 +45,7 @@ export default {
 }
 .navbar-right-link-text:hover {
     color: #64ffda;
+    cursor: pointer;
 }
 .navbar-right-section-button {
     border-color: #64ffda;

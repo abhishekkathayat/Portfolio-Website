@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Navbar/>
+    <Navbar id="navbar" v-on:section="accessSection" :navbarlinks="navbarlinks"/>
     <Introview class="mt-16" :introdata="introdata"/>
-    <AboutMe class="mt-64" :detailaboutme="detailaboutme"/>
-    <Experience class="mt-64" :detailexperience="detailexperience"/>
-    <Projects class="mt-64" :detailprojects="detailprojects"/>
-    <GetInTouch class="mt-64" :detailgetintouch="detailgetintouch"/>
+    <AboutMe id="About" class="mt-32 pt-32" :detailaboutme="detailaboutme"/>
+    <Experience id="Experience" class="mt-32 pt-32" :detailexperience="detailexperience"/>
+    <Projects id="Work" class="mt-32 pt-32" :detailprojects="detailprojects"/>
+    <GetInTouch id="Contact" class="mt-32 pt-32" :detailgetintouch="detailgetintouch"/>
     <Footer class="mt-64" :detailfooter="detailfooter"/>
   </div>
 </template>
@@ -23,6 +23,24 @@ export default {
   name: 'App',
   data () {
     return {
+      navbarlinks: {
+        0: {
+          index: '01.',
+          name: 'About'
+        },
+        1: {
+          index: '02.',
+          name: 'Experience'
+        },
+        2: {
+          index: '02.',
+          name: 'Work'
+        },
+        3: {
+          index: '04.',
+          name: 'Contact'
+        }
+      },
       introdata: {
         myname: 'Abhishek Kathayat.',
         mywork: 'I build things for the web.',
@@ -140,6 +158,11 @@ export default {
     Introview,
     Experience,
     GetInTouch
+  },
+  methods: {
+    accessSection: function (sectionName) {
+      document.getElementById(sectionName).scrollIntoView();
+    }
   }
 }
 </script>
