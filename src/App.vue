@@ -33,7 +33,7 @@ export default {
           name: 'Experience'
         },
         2: {
-          index: '02.',
+          index: '03.',
           name: 'Work'
         },
         3: {
@@ -131,12 +131,12 @@ export default {
           ]
         },
         6: {
-          project_name: 'AapkiSevaMein',
-          project_description: 'An app for helping old age people with their daily needs and requirements. Developed during my internship at Prabudha Buildcon LLP.',
-          project_github_link: 'https://www.github.com/Abhishek-Kathayat/AapkiSevaMein',
+          project_name: 'Personal Website',
+          project_description: 'A Personal Porfolio Website built by me using Vue and Tailwindcss. Design idea was taken from another website, whose link is provided in the bottom of this page.',
+          project_github_link: 'https://www.github.com/Abhishek-Kathayat/abhishek-kathayat.github.io',
           project_technologies: [
-            'Android',
-            'Java'
+            'Vue',
+            'Tailwindcss',
           ]
         }
       },
