@@ -55,7 +55,7 @@
 export default {
     name: 'Experience',
     props: {
-        detailexperience: Object
+        detailexperience: Array
     },
     data () {
         return {

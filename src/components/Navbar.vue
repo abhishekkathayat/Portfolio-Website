@@ -27,7 +27,7 @@
 export default {
     name: 'Navbar',
     props: {
-        navbarlinks: Object
+        navbarlinks: Array
     }
 }
 </script>

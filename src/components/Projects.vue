@@ -49,7 +49,7 @@
 export default {
     name: 'Projects',
     props: {
-        detailprojects: Object
+        detailprojects: Array
     }
 }
 </script>
