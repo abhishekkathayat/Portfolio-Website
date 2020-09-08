@@ -24,7 +24,7 @@
     },
     "detailaboutme": {
         "aboutme_a": "Hello! I\"m Abhishek, a software developer based in Dehradun, Uttarakhand, India.",
-        "aboutme_b": "I enjoy designing and building website and mobile applications. My goal is to build products that provide the best experience. Recently I\"ve also started learning blockchain based application development.",
+        "aboutme_b": "I enjoy designing and building website and mobile applications. My goal is to build products that provide the best experience. Recently I've also started learning blockchain based application development.",
         "aboutme_technologies": [
             "HTML & CSS",
             "Vue",
@@ -120,7 +120,7 @@
         }
     ],
     "detailgetintouch": {
-        "description": "Whether you have a question or just want to say hi, just drop a message. I\"ll try my best to get back to you!"
+        "description": "Whether you have a question or just wanna say hi, just drop a message. I'll try my best to get back to you!"
     },
     "detailfooter": {
         "github_link": "https://www.github.com/Abhishek-Kathayat",
