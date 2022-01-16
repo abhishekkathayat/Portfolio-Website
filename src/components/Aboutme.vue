@@ -86,7 +86,7 @@ export default {
     color: #8892B0;
 }
 .aboutme-image {
-    width: 58%;
+    width: 45%;
     border-radius: 3px;
 }
 @media only screen and (max-width: 1125px) {
