@@ -1,6 +1,6 @@
 <template>
   <div class="intro-view-main flex justify-center self-center">
-    <div class="intro-view-main-head w-10/12 md:w-9/12 lg:w-9/12 xl:w-9/12">
+    <div class="intro-view-main-head w-10/12 md:w-9/12 lg:w-9/12 xl:w-9/12 mt-16">
       <h1 class="intro-view-main-head-nameis text-base-introname sm:text-md-introname md:text-md-introname lg:text-lg-introname xl:text-lg-introname mb-5 flex">
       Hi, my name is
       </h1>

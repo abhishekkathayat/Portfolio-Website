@@ -1,11 +1,21 @@
 <template>
   <div id="app">
     <Navbar id="navbar" v-on:section="accessSection" :navbarlinks="navbarlinks"/>
-    <Introview class="mt-16" :introdata="introdata"/>
-    <AboutMe id="About" class="mt-32 pt-32" :detailaboutme="detailaboutme"/>
-    <Experience id="Experience" class="mt-32 pt-32" :detailexperience="detailexperience"/>
-    <Projects id="Work" class="mt-32 pt-32" :detailprojects="detailprojects"/>
-    <GetInTouch id="Contact" class="mt-32 pt-32" :detailgetintouch="detailgetintouch"/>
+    <div class="introview mt-16">
+      <Introview id="Intro" class="load-slide-in" :introdata="introdata"/>
+    </div>
+    <div class="aboutme mt-32">
+      <AboutMe id="About" class="pt-32" :detailaboutme="detailaboutme"/>
+    </div>
+    <div class="experience mt-32">
+      <Experience id="Experience" class="pt-32" :detailexperience="detailexperience"/>
+    </div>
+    <div class="work mt-32">
+      <Projects id="Work" class="pt-32" :detailprojects="detailprojects"/>
+    </div>
+    <div class="contact mt-32">
+      <GetInTouch id="Contact" class="pt-32" :detailgetintouch="detailgetintouch"/>
+    </div>
     <Footer class="mt-64" :detailfooter="detailfooter"/>
   </div>
 </template>
@@ -45,7 +55,32 @@ export default {
   methods: {
     accessSection: function (sectionName) {
       document.getElementById(sectionName).scrollIntoView();
+    },
+
+    isElementInViewport: function (element) {
+      var bounds = element.getBoundingClientRect();
+      if(bounds.top <= document.documentElement.clientHeight) {
+          return true;
+      }
+      else {
+        return false;
+      }
+    },
+    activateAnimation: function () {
+      var views = ["About", "Experience", "Work", "Contact"];
+      views.forEach(view => {
+        var element = document.getElementById(view);
+        if(this.isElementInViewport(element)) {
+          element.classList.add("load-slide-in");
+        }
+      });
     }
+  },
+  created() {
+    document.addEventListener('scroll', this.activateAnimation);
+  },
+  destroyed() {
+    document.removeEventListener('scroll', this.activateAnimation);
   }
 }
 </script>
@@ -53,6 +88,20 @@ export default {
 <style>
 * {
   background-color: #0a192f;
+  scroll-behavior: smooth;
+}
+.load-slide-in {
+  animation: 1s slide-in ease-in;
+}
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    margin-top: 10%;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0%;
+  }
 }
 @font-face {
   font-family: "Calibre";

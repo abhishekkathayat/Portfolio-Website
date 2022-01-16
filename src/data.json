@@ -35,10 +35,22 @@
             "Node.js",
             "Javascript",
             "Python",
-            "Django"
+            "Django",
+            "Spring Boots",
+            "Microservices"
         ]
     },
     "detailexperience": [
+        {
+            "company": "Infosys",
+            "company_url": "https://www.infosys.com/",
+            "job_position": "Digital Specialist Engineer",
+            "duration": "September 2020 - Present",
+            "job_description": [
+                "Completed 2 months training in Java Spring Boots, Spring Microservices and Angular.",
+                "Currently leading a team of 7 Developers working on the implementation of functionalities for a specific product in the Operation Support System (OSS) for a US Based Telecom Client."
+            ]
+        },
         {
             "company": "IIRS, ISRO",
             "company_ff": "Indian Institute of Remote Sensing, Indian Space Research Organization",

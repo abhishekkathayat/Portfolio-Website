@@ -54,6 +54,7 @@ export default {
     border-color: #64ffda;
     border-style: solid;
     border-width: 1px;
+    border-radius: 3px;
     font-family: 'San Francisco';
     font-size: 14px;
     color: #64ffda;

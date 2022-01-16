@@ -15,9 +15,6 @@
                         <span class="navbar-right-link-text"> {{link.name}} </span> 
                     </li>
                 </ul>
-                <a href="./resume.pdf" target="_blank" rel="noopener noreferrer" class="navbar-right-section-button flex self-center px-5">
-                    Resume
-                </a>
             </div>
         </div>
     </div>
@@ -46,21 +43,5 @@ export default {
 .navbar-right-link-text:hover {
     color: #64ffda;
     cursor: pointer;
-}
-.navbar-right-section-button {
-    border-color: #64ffda;
-    border-width: 1px;
-    border-radius: 3px;
-    border-style: solid;
-    outline: none;
-    font-family: 'San Francisco';
-    color: #64ffda;
-    font-size: 13px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-}
-.navbar-right-section-button:hover {
-    background: #172a45;
 }
 </style>
