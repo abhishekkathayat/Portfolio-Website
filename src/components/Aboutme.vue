@@ -17,7 +17,7 @@
                     <p class="aboutme-content-text mt-4 text-sm-contentsize md:text-md-contentsize">
                         {{ detailaboutme.aboutme_b }}
                     </p>
-                    <div class="aboutme-content-tech mt-4">
+                    <div class="aboutme-content-tech mt-8">
                         <span class="aboutme-content-tech-head text-sm-contentsize md:text-md-contentsize">
                             Here are a few technologies that I've worked with:
                         </span>

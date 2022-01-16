@@ -20,11 +20,11 @@
     "introdata": {
         "myname": "Abhishek Kathayat.",
         "mywork": "I build things for the web.",
-        "myworkdescription": "I'm a software developer based in India, specializing in building (and occasionally designing) web and mobile based applications and currently learning to develop blockchain based solutions."
+        "myworkdescription": "I'm a software developer based in India, specializing in building (and occasionally designing) web and mobile based applications."
     },
     "detailaboutme": {
         "aboutme_a": "Hello! I'm Abhishek, a software developer based in Dehradun, Uttarakhand, India.",
-        "aboutme_b": "I enjoy designing and building website and mobile applications. My goal is to build products that provide the best experience. Recently I've also started learning blockchain based application development.",
+        "aboutme_b": "I enjoy designing and building website and mobile applications. My goal is to build products that provide the best experience.",
         "aboutme_technologies": [
             "HTML & CSS",
             "Vue",
